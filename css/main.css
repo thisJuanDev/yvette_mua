@@ -1,0 +1,501 @@
+/* ============================
+INFORMATION
+===============================
+Website Name: 
+Website URL: N/A
+Website Author: Juan Miguel Carrillo
+Author URL: juanpointoh.io
+Copyright 2024. All Rights Reserved.
+ */
+
+/* ============================
+MEDIA QUERIES 
+=============================== */
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    /* ------- Colors ------- */
+  
+    --bg-1: rgb(255, 255, 255);
+    --bg-2: rgb(255, 255, 255);
+    --bg-3: rgb(255, 255, 255);
+    --bg-4: rgb(255, 255, 255);
+    --bg-5: rgb(255, 255, 255);
+  
+    --border-1: rgb(128, 128, 128);
+    --border-2: rgb(128, 128, 128);
+    --border-3: rgb(128, 128, 128);
+    --border-4: rgb(128, 128, 128);
+    --border-5: rgb(128, 128, 128);
+  
+    --brand-1: rgb(0, 0, 0);
+    --brand-2: rgb(0, 0, 0);
+    --brand-3: rgb(0, 0, 0);
+    --brand-4: rgb(0, 0, 0);
+    --brand-5: rgb(0, 0, 0);
+  
+    --button-1: rgb(90, 90, 90);
+    --button-2: rgb(90, 90, 90); 
+    --button-3: rgb(90, 90, 90);
+    --button-4: rgb(90, 90, 90);
+    --button-5: rgb(90, 90, 90);
+  
+    --card-bg-1: rgb(255, 255, 255);
+    --card-bg-2: rgb(255, 255, 255);
+    --card-bg-3: rgb(255, 255, 255);
+    --card-bg-4: rgb(255, 255, 255);
+    --card-bg-5: rgb(255, 255, 255);
+
+    --debug-1: rgb(255, 0, 0);
+    --debug-2: rgb(0, 0, 255);
+    --debug-3: rgb(0, 255, 0);
+    --debug-4: rgb(255, 255, 0);
+    --debug-5: rgb(255, 0, 255);
+  
+    --link-1: rgb(0, 25, 255);
+    --link-2: rgb(0, 25, 255);
+    --link-3: rgb(0, 25, 255);
+    --link-4: rgb(0, 25, 255);
+    --link-5: rgb(0, 25, 255);
+  
+    --text-1: rgb(0, 0, 0);
+    --text-2: rgb(64, 64, 64);
+    --text-3: rgb(128, 128, 128);
+    --text-4: rgb(192, 192, 192);
+    --text-5: rgb(255, 255, 255);
+  }
+
+} 
+
+/* @media screen and (max-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+} */
+
+/* ============================
+UNIVERSAL 
+=============================== */
+
+
+:root {
+  /* ------- Colors ------- */
+
+  /* --bg-1: #f8bcbc; */
+  --bg-1: rgb(255, 255, 255);
+  --bg-3: rgb(255, 255, 255);
+  --bg-4: rgb(255, 255, 255);
+  --bg-5: rgb(255, 255, 255);
+
+  --border-1: rgb(128, 128, 128);
+  --border-2: rgb(128, 128, 128);
+  --border-3: rgb(128, 128, 128);
+  --border-4: rgb(128, 128, 128);
+  --border-5: rgb(128, 128, 128);
+
+  --brand-1: #ff80c8;
+  --brand-2: rgb(0, 0, 0);
+  --brand-3: rgb(0, 0, 0);
+  --brand-4: rgb(0, 0, 0);
+  --brand-5: rgb(0, 0, 0);
+
+  --button-1: rgb(90, 90, 90);
+  --button-2: rgb(90, 90, 90); 
+  --button-3: rgb(90, 90, 90);
+  --button-4: rgb(90, 90, 90);
+  --button-5: rgb(90, 90, 90);
+
+  --card-bg-1: rgb(255, 255, 255);
+  --card-bg-2: rgb(255, 255, 255);
+  --card-bg-3: rgb(255, 255, 255);
+  --card-bg-4: rgb(255, 255, 255);
+  --card-bg-5: rgb(255, 255, 255);
+
+  --card-shadow-1: rgba(255, 0, 212, .75);
+
+  --debug-1: rgb(255, 0, 0);
+  --debug-2: rgb(0, 0, 255);
+  --debug-3: rgb(0, 255, 0);
+  --debug-4: rgb(255, 255, 0);
+  --debug-5: rgb(255, 0, 255);
+
+  --hero-1: rgba(247, 0, 255, 0.33);
+  --hero-2: rgba(0, 0, 0, 0.25);
+
+  --link-1: rgb(0, 25, 255);
+  --link-2: rgb(0, 25, 255);
+  --link-3: rgb(0, 25, 255);
+  --link-4: rgb(0, 25, 255);
+  --link-5: rgb(0, 25, 255);
+
+  --shadow-1: rgb(0, 0, 0);
+  --shadow-2: rgb(64, 64, 64);
+  --shadow-3: rgb(128, 128, 128);
+  --shadow-4: rgb(192, 192, 192);
+  --shadow-5: rgb(255, 255, 255);
+
+  --text-1: rgb(0, 0, 0);
+  --text-2: rgb(64, 64, 64);
+  --text-3: rgb(128, 128, 128);
+  --text-4: rgb(192, 192, 192);
+  --text-5: rgb(255, 255, 255);
+
+  /* ------- Box Model ------- */
+
+  /* --border-1: 10px;
+  --border-2: 20px;
+  --border-3: 30px;
+  --border-4: 40px;
+  --border-5: 50px; */
+
+  --border-radius-1: 10px;
+  --border-radius-2: 20%;
+  --border-radius-3: 30%;
+  --border-radius-4: 40%;
+  --border-radius-5: 50%;
+
+  --margin-1: 10px;
+  --margin-2: 20px;
+  --margin-3: 30px;
+  --margin-4: 40px;
+  --margin-5: 50px;
+
+  --padding-1: 2px;
+  --padding-2: 20px;
+  --padding-3: 30px;
+  --padding-4: 40px;
+  --padding-5: 50px;
+}
+
+
+
+/* ============================
+ELEMENTS 
+=============================== */
+* {
+  /* border: 1px dashed var(--debug-1); */
+  /* background-color: var(--bg-2); */
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:hover {
+  text-decoration: underline;
+}
+
+article {
+  margin-bottom: var(--margin-5);
+  /* padding: var(--padding-5); */
+}
+
+button {
+  /* background-color: var(--button-1); */
+  background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  background-position: center;
+  box-shadow: 0px 0px 5px var(--shadow-5);
+  
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  border-radius: var(--border-radius-1);
+  color: var(--text-5);
+  font-size: larger;
+  background-attachment: fixed;
+  margin: 25px;
+  padding: var(--padding-2);
+  /* align-self: center; */
+  border: 2px white solid;
+
+  font-weight: 500;
+  text-shadow: 0px 0px 5px var(--shadow-5);
+    text-decoration: none;
+  max-width: 250px;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, .25);
+  /* color: rgba(0, 0, 0, 0); */
+
+
+}
+
+footer {
+
+  background-image: linear-gradient(var(--hero-2), var(--hero-1)), url(../assets/img/mua_hero.jpeg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-blend-mode: darken;
+
+  margin-top: var(--margin-3);
+
+  /* NEEDS MEDIA QUIERY FOR SMALLER SIZE TO CENTER BG IMAGE */
+
+  /* box model */
+  border-radius:50vw 0 0;
+  color: var(--text-5);
+
+/* display */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  min-height: 400px;
+
+}
+
+/* footer p { */
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* justify-self: left; */
+/* color: black; */
+/* align-self: flex-end; */
+/* } */
+
+html {
+  margin: auto;
+  max-width: 1080px;
+}
+
+header {
+  /* background image */
+  background-image: linear-gradient(var(--hero-1), var(--hero-2)), url(../assets/img/mua_hero.jpeg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-blend-mode: darken;
+
+
+  /* NEEDS MEDIA QUIERY FOR SMALLER SIZE TO CENTER BG IMAGE */
+
+  /* box model */
+  border-radius:0 0 50vw;
+  color: var(--text-5);
+  margin-bottom: var(--margin-5);
+
+/* display */
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  min-height: 400px;
+
+  
+}
+
+header div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0px 0px 5px var(--shadow-5);
+
+}
+
+/* h1 {
+  text-shadow: 0px 0px 5px var(--shadow-5);
+
+} */
+
+h1, h2, h3, h4 {
+  text-align: center;
+  text-wrap: balance;
+}
+
+nav {
+  width: 100%;
+  padding: var(--padding-1);
+  background-color: var(--bg-1);
+  align-self: flex-start;
+}
+
+p {
+  text-align: center;
+  text-wrap: balance;
+}
+
+table {
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ============================
+IDS 
+=============================== */
+
+#cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#about h2 {
+  margin-bottom: var(--margin-3);
+}
+
+#about p {
+  margin: var(--margin-5 ) auto;
+  padding: var(--padding-1) var(--padding-5);
+  text-wrap: balance;
+  max-width: 75ch;
+  
+}
+
+#publications {
+  /* margin: var(--margin-3); */
+  padding: var(--padding-5);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+#socials {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* margin-bottom: auto; */
+  /* height: 100%; */
+}
+
+
+
+/* ============================
+CLASSES
+=============================== */
+.card {
+  /* background-image: url(../assets/img/mua_hero.jpg); */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: var(--margin-1);
+  box-shadow: 0px 0px 10px var(--card-shadow-1);
+
+
+  /* background-color: lightgreen; */
+  /* border: 2px solid var(--border-1); */
+  border-radius: var(--border-radius-5);
+  color: var(--text-1);
+
+  height: 200px;
+  width: 200px;
+}
+
+
+
+.debug {
+border: 1px dashed var(--debug-2);
+}
+
+.container {
+  margin: auto;
+}
+
+.flex-col {
+  display: flex;
+  flex-flow: column wrap;  
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;  
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-col {
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--margin-1);
+}
+
+.grid-row {
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--margin-1);
+}
+
+.hidden {
+  display: none;
+}
+
+.publication {
+
+  max-width: 200px;
+  height: 100%;
+  opacity: .8;
+  margin: var(--margin-2) var(--margin-5);
+}
+
+.responsive {
+  width: auto;
+  height: 100%;
+}
+
+.social {
+  margin: 5px;
+  width: 50px;
+  filter: invert();
+  opacity: .8;
+  border-radius: var(--border-radius-5);
+  box-shadow: 0px 0px 5px var(--shadow-1);
+
+}
+
+.social:hover {
+  opacity: 1;
+  /* background-color: rgba(255, 255, 255, .25); */
+  /* color: rgba(0, 0, 0, 0); */
+
+
+}
+  
+
+#testimonials {
+  max-width: 80%;
+  margin: auto;
+}
+
+
+
+.testimonial {
+  display: flex;
+  border-radius: var(--border-radius-1);
+  margin: var(--margin-2);
+  flex-flow: row wrap;
+  margin: var(--margin-1);
+  box-shadow: 0px 0px 10px var(--card-shadow-1);
+
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  flex-grow: 1;
+
+  flex-basis: 200px;
+  padding: var(--padding-2);
+}
+
+.testimonial img {
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}
+
+.testimonial p {
+  width: 25ch;
+}
